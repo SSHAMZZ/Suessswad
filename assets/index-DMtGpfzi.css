@@ -1,0 +1,1 @@
+body{margin:0;display:flex;place-items:center;min-width:320px;max-width:1080px;min-height:100vh;background-color:#580303;overflow-x:hidden}#root{text-align:center}.pages{display:flex;justify-content:center;align-items:center;flex-direction:column;min-height:100vh;width:100vw}.page{max-width:100%;height:auto;margin:2rem}
