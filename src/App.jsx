@@ -13,6 +13,7 @@ import page10Url from './assets/10.svg'
 import page11Url from './assets/11.svg'
 import page12Url from './assets/12.svg'
 import page13Url from './assets/13.svg'
+import page14Url from './assets/14.svg'
 
 function App() {
   
@@ -33,6 +34,7 @@ function App() {
           <img src={page11Url} className='page'></img>
           <img src={page12Url} className='page'></img>
           <img src={page13Url} className='page'></img>
+          <img src={page14Url} className='page'></img>
       </div>
     </>
   )
