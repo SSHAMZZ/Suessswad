@@ -1,7 +1,7 @@
 import "./CuratedMenu.css";
 import page1Url from '../assets/Curated_Menu/1.svg';
-import page2Url from '../assets/Curated_Menu/1.svg';
-import page3Url from '../assets/Curated_Menu/1.svg';
+import page2Url from '../assets/Curated_Menu/2.svg';
+import page3Url from '../assets/Curated_Menu/3.svg';
 
 
 
