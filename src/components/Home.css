@@ -1,0 +1,30 @@
+.pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%; /* changed from 100vw */
+}
+
+.page {
+  max-width: 100%;
+  height: auto;
+  margin: 2rem;
+}
+
+.home {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  margin-left: 0;
+  background-image: url("../assets/Website_Bg.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; /* Ensures the entire image is visible */
+  background-position: center; /* Centers the image */
+  overflow-x: hidden;
+
+  
+
+}

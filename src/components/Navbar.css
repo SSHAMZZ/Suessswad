@@ -1,0 +1,88 @@
+/* General navbar style */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+   font-family: 'Poppins', sans-serif;
+}
+
+/* Container for logo + links */
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+  border-radius: 4px;
+}
+
+/* Links wrapper */
+.navbar-links {
+  display: flex;
+  gap: 24px;
+}
+
+/* Links */
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+/* Home page theme */
+.navbar.home {
+  background-color: #990f02; /* Deep red */
+}
+
+.navbar.home .nav-link {
+  color: #f8f8f8;
+}
+
+.navbar.home .nav-link:hover {
+  color: #ddd;
+}
+
+/* Curated menu page theme */
+.navbar.curated {
+  background-color: #f8f8f8; /* Light */
+}
+
+.navbar.curated .nav-link {
+  color: #990f02;
+}
+
+.navbar.curated .nav-link:hover {
+  color: #660a00;
+}
+
+/* 📱 Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .nav-link {
+    font-size: 18px;
+  }
+}
