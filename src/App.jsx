@@ -1,5 +1,7 @@
 import { useState } from 'react'
-import { Routes, Route, Link } from "react-router-dom";
+import { useEffect } from "react";
+
+import { useNavigate, Routes, Route, Link } from "react-router-dom";
 import CuratedMenu from './components/CuratedMenu';
 import Home from './components/Home';
 import './App.css';
@@ -9,6 +11,16 @@ import Navbar from "./components/Navbar";
 
 
 function App() {
+   const navigate = useNavigate();
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const redirect = params.get("redirect");
+    if (redirect) {
+      navigate(redirect);
+    }
+  }, [navigate]);
+
   return (
      <div>
       <Navbar />

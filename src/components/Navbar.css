@@ -68,11 +68,21 @@
   color: #660a00;
 }
 
-/* 📱 Responsive adjustments */
+/* Navbar container desktop */
+.navbar-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .navbar-container {
     flex-direction: column;
     justify-content: center;
+    align-items: center; /* ✅ ensures centered */
     gap: 12px;
   }
 
@@ -80,9 +90,5 @@
     flex-direction: column;
     gap: 12px;
     align-items: center;
-  }
-
-  .nav-link {
-    font-size: 18px;
   }
 }
