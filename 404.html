@@ -1,13 +1,18 @@
+<!--This is an error page for static hosting (e.g. GitHub Pages) that redirects all 404s to index.html
+//So that React Router can handle the routing instead of the server 
+// Path goes like : 404.html -> index.html -> main.jsx -> App.jsx  -->
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <script type="text/javascript">
       // Redirect all 404s to index.html so React Router can handle them
-      var path = window.location.pathname;
-      var search = window.location.search;
-      var hash = window.location.hash;
-      window.location.replace('/?' + 'redirect=' + encodeURIComponent(path + search + hash));
+      
+      var path = window.location.pathname; //Example: /Curated-menu
+      var search = window.location.search; //Example: ?id=123 (Anything after "?", useful when implememnting a search bar)
+      var hash = window.location.hash; //Example: #section1 (Anything after "#", useful when linking to a specific section of a page)
+
+      window.location.replace('/?' + 'redirect=' + encodeURIComponent(path + search + hash)); //This is to make a redirext param, in the given format, that React Router can read and redirect to the correct page
     </script>
   </head>
   <body></body>
