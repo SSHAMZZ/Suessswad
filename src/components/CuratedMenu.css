@@ -8,20 +8,14 @@
 }
 
 .page{
- max-width: 100%;
- height: auto;
  margin : 2rem;
 }
 
 .curated-menu {
   text-align: center;
   margin: 0;
-  
-  display: flex;
-  place-items: center;
-  /* min-width: 320px;
-  max-width: 1080px;
-  min-height: 100vh; */
+  /* display: flex;
+  place-items: center; */
   background-image: url(../assets/Curated_Menu/Curated_Menu_Bg.png);
   background-repeat: no-repeat;
   background-attachment: fixed;

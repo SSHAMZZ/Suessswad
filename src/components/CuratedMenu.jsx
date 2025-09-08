@@ -12,7 +12,6 @@ const CuratedMenu = () => {
       <img src={page1Url} className='page' alt='' />
       <img src={page2Url} className='page' alt='' />
       <img src={page3Url} className='page' alt='' />
-
     </div>
      </div>
   );

@@ -19,7 +19,7 @@ import page16Url from "../assets/Home/16.svg";
 const Home = () => {
   return (
     <div className='home'>
-    <div className="pages">
+     <div className="pages">
             <img src={page1Url} className='page' alt='' />
             <img src={page2Url} className='page' alt='' />
             <img src={page3Url} className='page' alt='' />
@@ -36,7 +36,7 @@ const Home = () => {
             <img src={page14Url} className='page' alt='' />
             <img src={page15Url} className='page' alt='' />
             <img src={page16Url} className='page' alt='' />
-    </div>
+     </div>
     </div>
   );
 }
